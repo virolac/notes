@@ -60,7 +60,7 @@
 1. Download the latest **Flutter SDK** from [flutter.dev](https://docs.flutter.dev/get-started/install/linux#install-flutter-manually)
 2. Extract the file in the desired location:
    ```sh
-   tar xf ~/Downloads/fultter_linux_3.7.1-stable.tar.xz
+   tar xf ~/Downloads/flutter_linux_3.7.1-stable.tar.xz
    ```
 3. Add the `flutter` tool to the `PATH`:
    ```sh

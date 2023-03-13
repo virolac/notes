@@ -1,14 +1,4 @@
 # React Native
-## Table of Contents
-- [General](#general)
-- [Components](#components)
-- [Custom Fonts](#custom-fonts)
-- [Stack Navigation](#stack-navigation)
-  - [Installation](#installation%3A)
-  - [Usage](#usage%3A)
-- [Drawer Navigation](#drawer-navigation)
-  - [Installation](#installation%3A-2)
-  - [Usage](#usage%3A-2)
 
 ## General
 - Build mobile apps (**Android** & **iOS**) using **React**

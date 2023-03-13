@@ -1,21 +1,5 @@
 # Svelte
 
-## Table of Contents
-- [What is Svelte?](#what-is-svelte%3F)
-- [Why use Svelte?](#why-use-svelte%3F)
-- [Setup a project](#setup-a-project)
-- [Svelte components](#svelte-components)
-- [Reactive declarations](#reactive-declarations)
-- [Conditional rendering](#conditional-rendering)
-- [Looping](#looping)
-- [Events](#events)
-  - [Listening to events](#listening-to-events)
-  - [Event modifiers](#event-modifiers)
-  - [Dispatching events](#dispatching-events)
-  - [Event forwarding](#event-forwarding)
-- [Transitions](#transitions)
-- [Stores](#stores)
-
 ## What is Svelte?
 - **Svelte** is a compiler that generates minimal and highly optimized **JavaScript** code
 - **Svelte** works a bit differently than traditional frameworks, but does a lot of the same things. It is often called a framework
@@ -47,7 +31,7 @@ npm run dev
 This will create a new project in the `my-svelte-project` directory, install its dependencies, and start a server on [http://localhost:5000](http://localhost:5000).
 
 ## Svelte components
-- Reusable pieces of the UI including the output (**HTML**), styling (**CSS**) and logic (**JavaScript**) 
+- Reusable pieces of the UI including the output (**HTML**), styling (**CSS**) and logic (**JavaScript**)
 - They are defined in files with a `.svelte` extension
 - They can be used like regular **HTML** elements, except the `/` is mandatory in self-closing tags  
   e.g. `<Todos />`
@@ -69,7 +53,7 @@ This will create a new project in the `my-svelte-project` directory, install its
   function addNumber() {
     numbers.push(numbers.length + 1);
   }
- 
+
   $: sum = numbers.reduce((acc, n) => acc + n, 0);
 </script>
 
@@ -88,7 +72,7 @@ This will create a new project in the `my-svelte-project` directory, install its
 </style>
 ```
 
-## Reactive declarations 
+## Reactive declarations
 Prefixing a statement with `$:` makes it reactive. This means that **Svelte** will re-run that statement whenever any of the referenced values change.
 
 **Example:**
@@ -174,7 +158,7 @@ We can listen to any event on an element with the `on:` directive:
 ```
 
 ### Event modifiers
-**DOM** event handlers can have *modifiers* that alter their behaviour. 
+**DOM** event handlers can have *modifiers* that alter their behaviour.
 
 For example, a handler with a `once` modifier will only run a single time:
 

@@ -1,48 +1,5 @@
 # Flutter
 
-## Table of Contents
-- [What is Flutter?](#what-is-flutter%3F)
-- [The Dart Programming Language](#the-dart-programming-language)
-- [Installation](#installation)
-- [Creating an app](#creating-an-app)
-- [Widgets](#widgets)
-  - [Stateless widgets](#stateless-widgets)
-  - [Stateful widgets](#stateful-widgets)
-  - [Built-in widgets](#built-in-widgets)
-    - [MaterialApp](#materialapp)
-    - [Scaffold](#scaffold)
-    - [FloatingActionButton](#floatingactionbutton)
-    - [AppBar](#appbar)
-    - [NavigationBar](#navigationbar)
-    - [NavigationDestination](#navigationdestination)
-    - [Navigator](#navigator)
-    - [MaterialPageRoute](#materialpageroute)
-    - [ThemeData](#themedata)
-    - [Text](#text)
-    - [TextStyle](#textstyle)
-    - [ListView](#listview)
-    - [ListTile](#listtile)
-    - [Center](#center)
-    - [Row](#row)
-    - [Column](#column)
-    - [Container](#container)
-    - [Divider](#divider)
-    - [Image](#image)
-    - [Icon](#icon)
-    - [IconButton](#iconbutton)
-    - [ElevatedButton](#elevatedbutton)
-    - [OutlinedButton](#outlinedbutton)
-    - [TextButton](#textbutton)
-    - [SizedBox](#sizedbox)
-    - [GestureDetector](#gesturedetector)
-    - [Switch](#switch)
-    - [Checkbox](#checkbox)
-    - [SingleChildScrollView](#singlechildscrollview)
-- [Utility classes](#utility-classes)
-  - [Colors](#colors)
-  - [Icons](#icons)
-  - [EdgeInsets](#edgeinsets)
-
 ## What is Flutter?
 - Google UI toolkit for building natively compiled apps for mobile,
   web and desktop
@@ -123,7 +80,7 @@ class _StartScreenState extends State<StartScreen> {
 }
 ```
 
-We should call the `setState(VoidCallback fn)` method whenever we want to update our widgets state: 
+We should call the `setState(VoidCallback fn)` method whenever we want to update our widgets state:
 
 ```dart
 setState(() { _myState = newValue; });
@@ -174,7 +131,7 @@ Offers a persistent and convenient way to switch between primary destinations in
 **Properties:**
 
 - `destinations` - the list of destinations (`List<NavigationDestination>`)
-- `onDestinationSelected` - called when one of the destinations in selected 
+- `onDestinationSelected` - called when one of the destinations in selected
 
 #### NavigationDestination
 Displays a label below an icon. Used with `NavigationBar.destinations`.

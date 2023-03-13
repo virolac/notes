@@ -1,45 +1,12 @@
 # PHP
 
-## Table of Contents
-- [General](#general)
-- [Output](#output)
-- [Data types](#data-types)
-- [Variables](#variables) 
-- [Arrays](#arrays)
-- [Strings](#strings)
-- [Conditional operators](#conditional-operators)
-- [If statement](#if-statement)
-- [Ternary operator](#ternary-operator)
-- [Null coalescing operator](#null-coalescing-operator)
-- [Switch statement](#switch-statement)
-- [Loops](#loops)
-  - [for](#for)
-  - [while](#while)
-  - [do while](#do-while)
-  - [foreach](#foreach)
-- [Functions](#functions)
-  - [Basic usage](#basic-usage)
-  - [Default arguments](#default-arguments)
-  - [Anonymous functions](#anonymous-functions)
-  - [Arrow functions](#arrow-functions)
-- [Superglobals](#superglobals)
-- [Input sanitization](#input-sanitization)
-- [Cookies](#cookies)
-- [Sessions](#sessions)
-- [File handling](#file-handling)
-- [Exception handling](#exception-handling)
-- [OOP](#oop)
-- [Including scripts](#including-scripts)
-- [Alternative syntax for control structures](#alternative-syntax-for-control-structures)
-- [Namespaces](#namespaces)
-
 ## General
 - Can render plain text or html markup
 - **PHP** code goes between `<?php ?>` tags
 - The ending tag is optional if no html markup follows
 - Single-line comments: `//`
 - Multi-line comments: `/* */`
-- Every line must end with a semicolon 
+- Every line must end with a semicolon
 
 ## Output
 - **echo:** Output string, numbers, html, etc.  
@@ -66,7 +33,7 @@
 - **callable:** Callback function
 - **resource:** Special variable that holds a resource
 
-## Variables 
+## Variables
 - Must be prefixed with `$`
 - Must start with a letter or the underscore character
 - Must not start with a number
@@ -81,7 +48,7 @@
 - Can create runtime constants with `define`  
   e.g. `define('HOST',  'localhost');`
 - Can check if a variable is set with the `isset($var)` function
-  
+
 ## Arrays
 - Can create with literal syntax  
   e.g. `$numbers = [1, 44, 55, 22];`
@@ -91,9 +58,9 @@
 - Can create associative arrays  
   e.g. `$hex = ['red' => '#f00', 'green' => '#0f0', 'blue' => '#00f'];`
 - Can create multi-dimensional arrays  
-  e.g. 
-  ```php 
-  $people = [['first_name' => 'Brad', 'last_name' => 'Traversy']]; 
+  e.g.
+  ```php
+  $people = [['first_name' => 'Brad', 'last_name' => 'Traversy']];
   echo $people[1]['first_name'];
   ```
 - Can convert to and from **JSON** with `json_encode` and `json_decode`
@@ -117,7 +84,7 @@
 - Can create an array from a range of values with the `range($start, $end, $step)` function
 - Can create a new array holding the result of calling a function on every element of another array by using the `array_map($callback, $array)` function
 - Can get an array with the elements of another array that pass some predicate by using the `array_filter($array, $predicate)` function
-- Can reduce the elements of an array to a single value using the `array_reduce($array, $callback, $initial)` function  
+- Can reduce the elements of an array to a single value using the `array_reduce($array, $callback, $initial)` function~ 
   e.g. `$sum = array_reduce($numbers, fn($partial_sum, $number) => $partial_sum + $number);`
 - Can get the value of the last element in the array with the `end($array)` function
 
@@ -131,7 +98,7 @@
 - Can reverse a string with the `strrev($string)` function
 - Can convert a string to lowercase with the `strtolower($string)` function and to uppercase with the `strtoupper($string)` function
 - Can uppercase the first character of each word with the `ucwords($string)` function
-- Can replace a word in a string with another word using the `str_replace($search, $replace, $subject, $count)` function 
+- Can replace a word in a string with another word using the `str_replace($search, $replace, $subject, $count)` function
 - Can return a portion of a string with the `substr($string, $offset, $length)` function
 - Can check if a string starts or ends with a substring using the `str_starts_with($string, $substr)` or `str_ends_with($string, $substr)` function respectively
 - Can split a string to an array of words with the `explode($separator, $string, $limit)` function
@@ -161,10 +128,10 @@ if ($t < 12) {
 
 ## Ternary operator
 ```php
-$firstPost = !empty($posts) ? $posts[0] : 'No Posts'; 
+$firstPost = !empty($posts) ? $posts[0] : 'No Posts';
 ```
 
-*It is possible to leave out the middle part of the ternary operator. Expression `expr1 ?: expr3` evaluates to the result of `expr1` if `expr1` evaluates to `true`, and 
+*It is possible to leave out the middle part of the ternary operator. Expression `expr1 ?: expr3` evaluates to the result of `expr1` if `expr1` evaluates to `true`, and
 `expr3` otherwise. `expr1` is only evaluated once in this case.*
 
 
@@ -399,7 +366,7 @@ $employee = new Employee('Sara', 'sara@gmail.com', '43434', 'Manager');
   don't include/require it again
 
 ## Alternative Syntax For Control Structures
-**PHP** offers an alternative syntax for some of its control structures; namely, `if`, `while`, `for`, `foreach`, and `switch`. In each case, the basic form of the 
+**PHP** offers an alternative syntax for some of its control structures; namely, `if`, `while`, `for`, `foreach`, and `switch`. In each case, the basic form of the
 alternate syntax is to change the opening brace to a colon (`:`) and the closing brace to `endif;`, `endwhile;`, `endfor;`, `endforeach;`, or `endswitch;`, respectively.  
 For example:
 ```php

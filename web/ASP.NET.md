@@ -1,20 +1,5 @@
 # ASP.NET
 
-## Table of Contents
-- [General](#general)
-- [Project structure](#project-structure)
-  - [wwwroot](#wwwroot)
-  - [Models](#models)
-  - [Views](#views)
-  - [Controllers](#controllers)
-  - [Program.cs](#program.cs)
-  - [appsettings.json](#appsettings.json)
-- [Routing](#routing)
-- [Passing model objects to views](#passing-model-objects-to-views)
-- [Tag helpers](#tag-helpers)
-- [Entity Framework](#entity-framework)
-- [Validation example](#validation-example)
-
 ## General
 - A **M**odel-**V**iew-**C**ontroller (**MVC**) web framework
   - `Model` - represents the shape of the data
@@ -39,7 +24,7 @@
   Stores **POCO** (**P**lain-**O**ld **C**LR **O**bjects) classes for the project.
 
 - ### Views
-  Stores `.cshtml` templates in different folders, one for each controller. 
+  Stores `.cshtml` templates in different folders, one for each controller.
 
   The views belonging to the `HomeController` are stored in a folder named `Home`, those belonging to the
   `AboutController` are stored in a folder named `About`, etc.
@@ -68,7 +53,7 @@
     Enables returning a type deriving from `ActionResult` or returning a specific type. The action's expected return
     type is inferred from the `T` in `ActionResult<T>`.
   - **HttpResults**  
-    Can be useful when sharing code between [**Minimal APIs**](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis) 
+    Can be useful when sharing code between [**Minimal APIs**](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis)
     and **Web API**.
 
 - ### Program.cs
@@ -124,7 +109,7 @@
 
 ## Routing
 The `UseRouting` *middleware* adds route matching to the pipeline. This *middleware* looks at the set of endpoints
-defined in the app, and selects the [**best match**](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/routing?view=aspnetcore-7.0#urlm) 
+defined in the app, and selects the [**best match**](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/routing?view=aspnetcore-7.0#urlm)
 based on the request.
 
 **URL** *pattern matching* works with paths of the form `/{controller}/{action}/{id?}`.
@@ -189,7 +174,7 @@ In the view template:
 
 - ```html
   <a asp-controller="Speaker"
-     asp-action="Detail" 
+     asp-action="Detail"
      asp-route-id="@Model.SpeakerId">SpeakerId: @Model.SpeakerId</a>
   ```
 

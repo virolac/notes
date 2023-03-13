@@ -1,35 +1,5 @@
 # Alpine.js
 
-## Table of Contents
-- [General](#general)
-- [Attributes](#attributes)
-  - [`x-data`](#x-data)
-  - [`x-bind`](#x-bind)
-  - [`x-on`](#x-on)
-  - [`x-text`](#x-text)
-  - [`x-html`](#x-html)
-  - [`x-model`](#x-model)
-  - [`x-show`](#x-show)
-  - [`x-transition`](#x-transition)
-  - [`x-for`](#x-for)
-  - [`x-if`](#x-if)
-  - [`x-init`](#x-init)
-  - [`x-effect`](#x-effect)
-  - [`x-ref`](#x-ref)
-  - [`x-cloak`](#x-cloak)
-  - [`x-ignore`](#x-ignore)
-- [Properties](#properties)
-  - [`$store`](#%24store)
-  - [`$el`](#%24el)
-  - [`$dispatch`](#%24dispatch)
-  - [`$watch`](#%24watch)
-  - [`$refs`](#%24refs)
-  - [`$nextTick`](#%24nexttick)
-- [Methods](#methods)
-  - [`Alpine.data`](#alpine.data)
-  - [`Alpine.store`](#alpine.store)
-- [Alpine initialization](#alpine-initialization)
-
 ## General
 - A tool for composing behavior directly in **HTML**
 - Offers the reactive and declarative nature of big front-end frameworks (e.g. **React**) at a much lower cost

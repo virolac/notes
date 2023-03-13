@@ -1,27 +1,5 @@
 # React
 
-## Table of Contents
-- [General](#general)
-- [What is the Virtual DOM?](#what-is-the-virtual-dom%3F)
-- [Elements](#elements)
-- [JSX](#jsx)
-- [Components](#components)
-  - [Function components](#function-components)
-    - [Rendering arrays](#rendering-arrays)
-    - [Hooks](#hooks)
-      - [`useState`](#usestate)
-      - [`useEffect`](#useeffect)
-      - [`useRef`](#useref)
-      - [`useReducer`](#usereducer)
-      - [`useContext`](#usecontext)
-      - [`useMemo` & `memo`](#usememo-%26-memo)
-      - [`useCallback`](#usecallback)
-  - [Class components](#class-components)
-  - [Lifecycle methods](#lifecycle-methods)
-  - [Controlled components](#controlled-components)
-- [Typechecking with PropTypes](#typechecking-with-proptypes)
-- [React Router](#react-router)
-
 ## General
 - A **JavaScript** library for building user interfaces
 - Maintained by **Facebook**

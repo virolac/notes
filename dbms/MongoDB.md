@@ -1,28 +1,5 @@
 # MongoDB
 
-## Table of Contents
-- [General](#general)
-- [MongoDB Shell (mongosh)](#mongodb-shell-(mongosh))
-  - [Commands](#commands)
-  - [Operations](#operations)
-- [CRUD operations](#crud-operations)
-  - [Insert documents](#insert-documents)
-    - [Insert a single document](#insert-a-single-document)
-    - [Insert multiple documents](#insert-multiple-documents)
-  - [Query documents](#query-documents)
-    - [Comparison query operators](#comparison-query-operators)
-    - [Logical query operators](#logical-query-operators)
-    - [Element query operators](#element-query-operators)
-    - [Examples](#examples)
-  - [Update documents](#update-documents)
-    - [Update a single document](#update-a-single-document)
-    - [Update multiple documents](#update-multiple-documents)
-    - [Replace a document](#replace-a-document)
-  - [Delete documents](#delete-documents)
-    - [Delete a single document](#delete-a-single-document)
-    - [Delete multiple documents](#delete-multiple-documents)
-    - [Delete all documents](#delete-all-documents)
-
 ## General
 - A database based on a non-relational document model (**NoSQL**)
 - Designed for ease of application development and scaling
@@ -33,7 +10,7 @@
 - There is no need to create a *schema* (columns, etc.)
 
 ## MongoDB Shell (mongosh)
-The **MongoDB Shell**, `mongosh`, is a fully functional **JavaScript** and **Node.js 16.x REPL** environment for interacting with **MongoDB** deployments. We can use the **MongoDB Shell** 
+The **MongoDB Shell**, `mongosh`, is a fully functional **JavaScript** and **Node.js 16.x REPL** environment for interacting with **MongoDB** deployments. We can use the **MongoDB Shell**
 to test queries and operations directly with our database.
 
 ### Commands
@@ -163,7 +140,7 @@ We can use the `db.collection.find()` method in the **MongoDB Shell** to query d
 
 - ***<ins>Return all users sorted by their `name` in ascending order</ins>:***
   ```javascript
-  db.users.find().sort({ name: 1 }) 
+  db.users.find().sort({ name: 1 })
   ```
 
 - ***<ins>Return all users sorted by their `name` in descending order</ins>:***
@@ -223,7 +200,7 @@ We can use the `db.collection.find()` method in the **MongoDB Shell** to query d
 
 - ***<ins>Return all users whose street address is `123 Main St`</ins>:***
   ```javascript
-  db.users.find({ "address.street": "123 Main St" }) 
+  db.users.find({ "address.street": "123 Main St" })
   ```
 
 - ***<ins>Return the first user who is 40 or younger</ins>:***

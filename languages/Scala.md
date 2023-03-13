@@ -1,38 +1,5 @@
 # Scala
 
-## Table of Contents
-- [Why learn Scala?](#why-learn-scala%3F)
-- [What is Scala?](#what-is-scala%3F)
-- [Coursier](#coursier)
-  - [Installation](#installation)
-- [Scala Build Tool](#scala-build-tool)
-- [Giter8](#giter8)
-- [Comments](#comments)
-- [Variables](#variables)
-- [Types](#types)
-- [Type aliases](#type-aliases)
-- [Comparison operators](#comparison-operators)
-- [Numeric literals](#numeric-literals)
-- [Characters & Strings](#characters-%26-strings)
-  - [String interpolation](#string-interpolation)
-- [if Expression](#if-expression)
-- [match Expression](#match-expression)
-- [for Comprehensions](#for-comprehensions)
-- [Functions](#functions)
-- [Option](#option)
-- [Collections](#collections)
-  - [Array](#array)
-  - [List](#list)
-  - [Set](#set)
-  - [Map](#map)
-  - [Tuple](#tuple)
-  - [Useful higher-order methods](#useful-higher-order-methods)
-- [Packages](#packages)
-- [Classes](#classes)
-- [Traits](#traits)
-  - [Self-types](#self-types)
-- [Exceptions](#exceptions)
-
 ## Why learn Scala?
 - Cutting edge research language
 - Accepted in the industry
@@ -64,9 +31,9 @@
 **Scala** development environment. It can also download and cache artifacts from the web.
 
 ### Installation
-1. curl -fL "https://github.com/coursier/launchers/raw/master/cs-$(uname -m)-pc-linux.gz" | gzip -d > cs 
-2. chmod +x cs 
-3. ./cs setup 
+1. curl -fL "https://github.com/coursier/launchers/raw/master/cs-$(uname -m)-pc-linux.gz" | gzip -d > cs
+2. chmod +x cs
+3. ./cs setup
 
 ## Scala Build Tool
 `sbt` is the interactive build tool for **Scala**.
@@ -158,7 +125,7 @@ type N = Int
 ### String interpolation
 **Scala** supports multiple forms of string interpolation, which happen at compile-time:
 
-- The `s` Interpolator: 
+- The `s` Interpolator:
   ```scala
   s"$name is $age years old"
   ```
@@ -269,7 +236,7 @@ Collections are immutable by default, unless qualified/imported from the `scala.
 
 ```scala
 val fruits = Array("apple", "orange", "banana") // syntactic sugar for Array.apply(...)
-println(fruits(2)) 
+println(fruits(2))
 fruits(2) = "melon" // syntactic sugar for fruits.update(2, "melon")
 ```
 
@@ -298,7 +265,7 @@ fruits(2) = "melon" // syntactic sugar for fruits.update(2, "melon")
   ```
 
 ### Set
-- An unordered collection of elements that contains no duplicates: 
+- An unordered collection of elements that contains no duplicates:
   ```scala
   val names: Set[String] = Set("Max", "Tom", "John", "Max")
 
@@ -314,8 +281,8 @@ fruits(2) = "melon" // syntactic sugar for fruits.update(2, "melon")
 - The `isEmpty` method returns `true` if the `Set` contains no elements
 - We can concatenate two sets using the `++` operator (**union**)
 - We can compute the **intersection** of two sets with the `&` operator or the `intersect` method
-- We can get the minimum element of a `Set` using the `min` method 
-- We can get the maximum element of a `Set` using the `max` method 
+- We can get the minimum element of a `Set` using the `min` method
+- We can get the maximum element of a `Set` using the `max` method
 
 ### Map
 - A collection of [key/value pairs](#tuples), where each key is unique:
@@ -345,7 +312,7 @@ fruits(2) = "melon" // syntactic sugar for fruits.update(2, "melon")
 - We can access the elements of a tuple using `._1`, `._2`, etc.
 - `Tuple2` pairs can be created using the `->` operator:
   ```scala
-  1 -> "Tom" 
+  1 -> "Tom"
   // is equivalent to
   (1, "Tom")
   ```

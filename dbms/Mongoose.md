@@ -1,20 +1,5 @@
 # Mongoose
 
-## Table of Contents
-- [Installation](#installation)
-- [Connect to a MongoDB database](#connect-to-a-mongodb-database)
-- [Main concepts](#main-concepts)
-  - [Schema](#schema)
-  - [Model](#model)
-  - [Queries](#queries)
-- [Custom validation](#custom-validation)
-- [References to other documents](#references-to-other-documents)
-- [Instance methods](#instance-methods)
-- [Statics](#statics)
-- [Query helpers](#query-helpers)
-- [Virtuals](#virtuals)
-- [Middleware](#middleware)
-
 ## Installation
 ```sh
 npm install mongoose --save
@@ -27,7 +12,7 @@ The first thing we need to do is connect to a **MongoDB** database:
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodb:localhost/testdb", 
+  "mongodb:localhost/testdb",
   () => {
     console.log("connected");
   },
@@ -52,8 +37,8 @@ const mongoose = require("mongoose");
 
 const blogSchema = new mongoose.Schema({
   title: String, // String is shorthand for { type: String }
-  author: { 
-    type: String, 
+  author: {
+    type: String,
     minLength: 5,
     required: true,
     immutable: true,
@@ -280,7 +265,7 @@ Animal.find().byName("fido").exec((err, animals) => {
 Query helper methods let us extend **Mongoose**'s chainable query builder **API**.
 
 ## Virtuals
-`Virtual`s are document properties that we can get and set but that do not get persisted to **MongoDB**: 
+`Virtual`s are document properties that we can get and set but that do not get persisted to **MongoDB**:
 
 ```javascript
 personSchema.virtual("fullName").get(function () {

@@ -1,23 +1,5 @@
 # Sass
 
-## Table of Contents
-- [General](#general)
-- [Variables](#variables)
-  - [Lists](#lists)
-  - [Maps](#maps)
-- [Nesting](#nesting)
-- [Parent selector](#parent-selector)
-- [Mixins](#mixins)
-- [Functions](#functions)
-  - [Color functions](#color-functions)
-- [Partials](#partials)
-- [Imports](#imports)
-- [Inheritance](#inheritance)
-- [Operators](#operators)
-- [Interpolation](#interpolation)
-- [Conditionals](#conditionals)
-- [Loops](#loops)
-
 ## General
 - **Sass** stands for **S**yntactically **A**wesome **S**tyle**S**heets
 - It is a **CSS** preprocessor

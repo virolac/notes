@@ -1,19 +1,5 @@
 # Angular
 
-## Table of Contents
-- [General](#general)
-- [Angular CLI](#angular-cli)
-- [Components](#components)
-- [Services](#services)
-- [AppModule](#appmodule)
-- [Directives](#directives)
-- [Types of data binding](#types-of-data-binding)
-- [Sharing data between child and parent directives and
-  components](#sharing-data-between-child-and-parent-directives-and-components)
-- [Observable data](#observable-data)
-- [Http services](#http-services)
-- [Routing](#routing)
-
 ## General
 - Front-end framework
 - Used to be called **AngularJS** but in *version 2* it was rewritten completely from scratch
@@ -32,23 +18,23 @@
 - Create a service with `ng generate service <service-name>`
 - Create a module with `ng generate module <module-name>`
 - Build for production with `ng build`
-  
+
 ## Components
 - **Components** are the fundamental building blocks of **Angular** applications
 - They display data on the screen, listen for user input, and take action based on that input
 - Every component has its own directory with 4 files in it:
-	- `<name>.component.html` - the markup template for the component
-	- `<name>.component.css` - the component stylesheet
-	- `<name>.component.ts` - the component logic
-	- `<name>.component.spec.ts` - the component test specification
+  - `<name>.component.html` - the markup template for the component
+  - `<name>.component.css` - the component stylesheet
+  - `<name>.component.ts` - the component logic
+  - `<name>.component.spec.ts` - the component test specification
 - Application-wide styles are put in `src/styles.css`
 - Components are implemented as **TypeScript** classes
 - Every component is decorated with `@Component` which is a decorator function that specifies the **Angular** metadata
   for the component:
-	- `selector` - the component's **CSS** element selector and the name of the **HTML** element that identifies this
+  - `selector` - the component's **CSS** element selector and the name of the **HTML** element that identifies this
       component within a parent component's template
-	- `templateUrl` - the location of the component's template file
-	- `styleUrls` - the location of the component's private **CSS** styles
+  - `templateUrl` - the location of the component's template file
+  - `styleUrls` - the location of the component's private **CSS** styles
 - Properties need to be added to a component's `class` in order to be available for use in its template file
 - `Pipes` are a good way to format strings, currency amounts, dates, and other display data  
   e.g. `<h2>{{hero.name | uppercase}} Details</h2>`
@@ -93,7 +79,7 @@ Some of the critical metadata is in `@NgModule` decorators.
 
 The most important `@NgModule` decorator annotates the top-level `AppModule` class.
 
-`ng new` creates an `AppModule` class in `src/app/app.module.ts` when it creates the project. 
+`ng new` creates an `AppModule` class in `src/app/app.module.ts` when it creates the project.
 
 To opt-in for modules like the `FormsModule` we need to import them and add them to the `imports` array in `@NgModule`.
 For example:
@@ -127,14 +113,14 @@ declarations: [
   ```
 - `*ngIf` - conditionally include a template based on the value of an expression coerced to **Boolean**:
   ```html
-  <div *ngIf="condition">Content to render when condition is true.</div> 
+  <div *ngIf="condition">Content to render when condition is true.</div>
   ```
 - `[ngClass]` - add or remove multiple **CSS** classes simultaneously
 - `[ngStyle]` - set multiple inline styles simultaneously, based on the state of the component
 - `[(ngModel)]` - create a two-way binding between an input element an a component property (need to import the
   `FormsModule`):
   ```html
-  <input id="name" [(ngModel)]="hero.name" placeholder="name"> 
+  <input id="name" [(ngModel)]="hero.name" placeholder="name">
   ```
 
 ## Types of data binding
@@ -145,7 +131,7 @@ declarations: [
 - From view to source (**Event**):  
   `(target)="statement"`
 - In a two-way sequence of view to source to view:  
-  `[(target)]="expression"` 
+  `[(target)]="expression"`
 
 ## Sharing data between child and parent directives and components
 A common pattern in **Angular** is sharing data between a parent component and one or more child components. We can
@@ -236,7 +222,7 @@ getHeroes(): void {
 ## HTTP services
 `HttpClient` is **Angular**'s mechanism for communicating with a remote server over **HTTP**.
 
-It is similar to [axios](https://axios-http.com/) or the **JavaScript** built-in `fetch` function. 
+It is similar to [axios](https://axios-http.com/) or the **JavaScript** built-in `fetch` function.
 
 `HttpClient` methods return **RxJS** `Observable` objects.
 
@@ -249,7 +235,7 @@ import { HttpClientModule } from "@angular/common/http";
   imports: [
     HttpClientModule,
   ],
-}) 
+})
 ```
 
 Then to use it in a [service](#services):

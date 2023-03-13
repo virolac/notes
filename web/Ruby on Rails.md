@@ -1,22 +1,5 @@
 # Ruby on Rails
 
-## Table of Contents
-- [General](#general)
-- [Project Structure](#project-structure)
-- [The Rails Command Line](#the-rails-command-line)
-- [Model](#model)
-  - [Associations](#associations)
-  - [Migrations](#migrations)
-- [View](#view)
-  - [Partials](#partials)
-  - [Helpers](#helpers)
-- [Controller](#controller)
-  - [Filters](#filters)
-- [Routing](#routing)
-  - [Route Parameters](#route-parameters)
-  - [Resource Routing](#resource-routing)
-- [Scaffold](#scaffold)
-
 ## General
 - A *full-stack web application development framework* written in the **Ruby** programming language
 - Follows the **M**odel-**V**iew-**C**ontroller (**MVC**) application design pattern

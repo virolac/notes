@@ -1,35 +1,5 @@
 # Vue.js
 
-## Table of Contents
-- [General](#general)
-- [Vue CLI](#vue-cli)
-- [Components](#components)
-  - [Properties](#properties)
-    - [`name`](#name)
-    - [`template`](#template)
-    - [`data`](#data)
-    - [`methods`](#methods)
-    - [`props`](#props)
-    - [`components`](#components)
-    - [`emits`](#emits)
-    - [`computed`](#computed)
-- [Basic SFC layout](#basic-sfc-layout)
-- [Creating a Vue application](#creating-a-vue-application)
-- [Built-in directives](#built-in-directives)
-  - [# v-text](#%23-v-text)
-  - [# v-bind](#%23-v-bind)
-  - [# v-if](#%23-v-if)
-  - [# v-show](#%23-v-show)
-  - [# v-for](#%23-v-for)
-  - [# v-on](#%23-v-on)
-  - [# v-model](#%23-v-model)
-- [Lifecycle hooks](#lifecycle-hooks)
-- [Dynamically binding classes](#dynamically-binding-classes)
-- [vue.config.js](#vue.config.js)
-- [Vue Router](#vue-router)
-  - [HTML](#html)
-  - [JavaScript](#javascript)
-
 ## General
 - Uses a **Virtual DOM** representation, similar to **React**
 - Interface is divided into components, which include a template for markup, logic including any state/data/methods as
@@ -44,7 +14,7 @@
 - `create` - accepts a project name and then asks a series of questions to configure the project before creating it
 
 ## Components
-- Components are usually defined in a dedicated file using the `.vue` extension - known as a [**Single-File Component**](https://vuejs.org/guide/scaling-up/sfc.html) 
+- Components are usually defined in a dedicated file using the `.vue` extension - known as a [**Single-File Component**](https://vuejs.org/guide/scaling-up/sfc.html)
   (**SFC** for short)
 - A component is a **JavaScript** object with special properties and methods
 - We can also pass "props" into a component:
@@ -279,7 +249,7 @@ Dynamically bind one or more attributes, or a component prop to an expression.
 - **Example:**  
   ```html
   <!-- bind an attribute -->
-  <img v-bind:src="imageSrc" /> 
+  <img v-bind:src="imageSrc" />
 
   <!-- shorthand -->
   <img :src="imageSrc" />

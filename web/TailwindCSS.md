@@ -1,43 +1,5 @@
 # TailwindCSS
 
-## Table of Contents
-- [General](#general)
-- [Installation](#installation)
-- [Configuration](#configuration)
-  - [Content](#content)
-  - [Theme](#theme)
-  - [Plugins](#plugins)
-  - [Important](#important)
-- [Utility classes](#utility-classes)
-  - [Container](#container)
-  - [Position](#position)
-  - [Top / Right / Bottom / Left](#top-%2F-right-%2F-bottom-%2F-left)
-  - [Width](#width)
-  - [Height](#height)
-  - [Min-Width](#min-width)
-  - [Max-Width](#max-width)
-  - [Min-Height](#min-height)
-  - [Max-Height](#max-height)
-  - [Margin](#margin)
-  - [Padding](#padding)
-  - [Space Between](#space-between)
-  - [Display](#display)
-  - [Flex Direction](#flex-direction)
-  - [Justify Content](#justify-content)
-  - [Align Items](#align-items)
-  - [Align Self](#align-self)
-  - [Text Align](#text-align)
-  - [Font Weight](#font-weight)
-  - [Line Height](#line-height)
-  - [Background Color](#background-color)
-  - [Border Radius](#border-radius)
-  - [Box Shadow](#box-shadow)
-  - [Drop Shadow](#drop-shadow)
-- [Conditional styles](#conditional-styles)
-- [Styling based on parent state](#styling-based-on-parent-state)
-  - [Differentiating nested groups](#differentiating-nested-groups)
-- [Custom styles](#custom-styles)
-
 ## General
 - A utility-first **CSS** framework for rapidly building responsive custom user interfaces
 - Unlike **Bootstrap**, it doesn't offer components like *buttons* and *navbars* but is more easily customizable
@@ -1131,7 +1093,7 @@ Wrapping any custom **CSS** in a `@layer` directive also makes it possible to us
 ```css
 @layer components {
   .sidebar-icon {
-    @apply relative flex items-center justify-center 
+    @apply relative flex items-center justify-center
            h-12 w-12 mt-2 mb-2 mx-auto shadow-lg
            bg-gray-800 text-green-500
            hover:bg-green-600 hover:text-white

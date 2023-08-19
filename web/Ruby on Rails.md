@@ -131,7 +131,7 @@ In **Rails**, an *association* is a connection between two **Active Record** mod
 
 ```ruby
 class Author < ApplicationRecord
-  has_many :books, dependent: destroy
+  has_many :books, dependent: :destroy
 end
 
 class Book < ApplicationRecord
